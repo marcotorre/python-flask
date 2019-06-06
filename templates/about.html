@@ -4,12 +4,11 @@
         <link rel="stylesheet" href="{{ css }}" />
     </head>
     <body>
-        {{ name }}
-        <h1>{{ v }}</h1>
+        <h1>{{ name }}</h1>
         <ul>
             <li>WSGI Enabled</li>
-            <li>Flask version <em>%s</em></li>
+            <li>Flask version <em>{{ v }}</em></li>
         </ul>
-        <p>Visit the <a href='./'>home</a> page or view the <a href='%s'>{{ source }}</a>.</p>
+        <p>Visit the <a href='./'>home</a> page or view the <a href='{{ source }}'>source code</a>.</p>
     </body>
 </html>
